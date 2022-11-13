@@ -121,6 +121,32 @@
   </entry>
   
   <entry>
+    <title>栈和队列</title>
+    <link href="https://github.com/pure-hearted/pure-hearted.github.io.git/2022/11/09/21.zhan-he-dui-lie/"/>
+    <id>https://github.com/pure-hearted/pure-hearted.github.io.git/2022/11/09/21.zhan-he-dui-lie/</id>
+    <published>2022-11-09T04:06:00.000Z</published>
+    <updated>2022-11-13T06:01:55.368Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;栈和队列&quot;&gt;&lt;a href=&quot;#栈和队列&quot; class=&quot;headerlink&quot; title=&quot;栈和队列&quot;&gt;&lt;/a&gt;&lt;strong&gt;栈和队列&lt;/strong&gt;&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;栈的概念与存储结构&quot;&gt;&lt;a href=&quot;#栈的概念与存储结构&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="数据结构与算法" scheme="https://github.com/pure-hearted/pure-hearted.github.io.git/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="数据结构与算法初阶" scheme="https://github.com/pure-hearted/pure-hearted.github.io.git/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%88%9D%E9%98%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>带头双向循环链表的实现</title>
     <link href="https://github.com/pure-hearted/pure-hearted.github.io.git/2022/11/09/20.dai-tou-shuang-xiang-xun-huan-lian-biao-de-shi-xian/"/>
     <id>https://github.com/pure-hearted/pure-hearted.github.io.git/2022/11/09/20.dai-tou-shuang-xiang-xun-huan-lian-biao-de-shi-xian/</id>
@@ -495,32 +521,6 @@
         
     <summary type="html">&lt;h1 id=&quot;低阶指针&quot;&gt;&lt;a href=&quot;#低阶指针&quot; class=&quot;headerlink&quot; title=&quot;低阶指针&quot;&gt;&lt;/a&gt;&lt;strong&gt;低阶指针&lt;/strong&gt;&lt;/h1&gt;&lt;hr&gt;
 &lt;h2 id=&quot;理解指针&quot;&gt;&lt;a href=&quot;#理解指针&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="C语言" scheme="https://github.com/pure-hearted/pure-hearted.github.io.git/categories/C%E8%AF%AD%E8%A8%80/"/>
-    
-    
-    <category term="C语言初阶" scheme="https://github.com/pure-hearted/pure-hearted.github.io.git/tags/C%E8%AF%AD%E8%A8%80%E5%88%9D%E9%98%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>操作符</title>
-    <link href="https://github.com/pure-hearted/pure-hearted.github.io.git/2022/11/08/5.cao-zuo-fu/"/>
-    <id>https://github.com/pure-hearted/pure-hearted.github.io.git/2022/11/08/5.cao-zuo-fu/</id>
-    <published>2022-11-08T06:06:00.000Z</published>
-    <updated>2022-11-12T13:41:44.785Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;操作符&quot;&gt;&lt;a href=&quot;#操作符&quot; class=&quot;headerlink&quot; title=&quot;操作符&quot;&gt;&lt;/a&gt;&lt;strong&gt;操作符&lt;/strong&gt;&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;源码、补码、反码、移码&quot;&gt;&lt;a href=&quot;#源码、补码、反码、移码&quot;</summary>
         
       
     
