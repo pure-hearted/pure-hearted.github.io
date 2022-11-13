@@ -692,7 +692,7 @@
 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122057216.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122057216.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220908175229447"></p>
+<p><img src="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/1.png" class="lazyload placeholder" data-srcset="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/1.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>char*指向的是目标首元素地址，而不重新开空间，如下：</code></strong></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_CRT_SECURE_NO_WARNINGS</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;stdio.h></span></span>
@@ -714,8 +714,8 @@
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122057497.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122057497.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220908175757235"></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122057065.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122057065.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220908180124134"></p>
+<p><img src="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/2.png" class="lazyload placeholder" data-srcset="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/2.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<p><img src="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/3.png" class="lazyload placeholder" data-srcset="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/3.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 <hr>
 <h2 id="数组指针与指针数组"><a href="#数组指针与指针数组" class="headerlink" title="数组指针与指针数组"></a><strong>数组指针与指针数组</strong></h2><blockquote>
@@ -727,12 +727,12 @@
 <p><strong><code>int (*p2)[10]</code>;—数组指针—<font color=red>p2先和 * 结合，说明p2是一个指针变量，然后指向的是一个大小为10个整型的数组,所以p2是一个指针，指向数组，叫数组指针</font></strong></p>
 <p><strong>这里要注意：[]的优先级要高于 * 号的，所以必须加上()来保证p先和*结合</strong></p>
 <p><strong>总结：<code>优先看指针变量名先和谁结合</code>—<code>与* 结合是指针</code>，<code>与[]结合是数组</code>，然后再去确定另外的看它是指针数组还是数组指针</strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122057921.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122057921.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220909124927077"></p>
+<p><img src="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/4.png" class="lazyload placeholder" data-srcset="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/4.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><font color=red><strong>int arr[5];—arr是一个整形数组，存放5个int类型的元素</strong></font></p>
 <p><font color=red><strong><code>int * parr[10]</code>;—parr是一个指针数组，存放10个int * 类型的指针</strong></font></p>
 <p><font color=red><strong><code>int (* parr2)[10]</code>;—parr2是一个数组指针，指向一个数组，数组里有10个int类型的元素</strong></font></p>
 <p><font color=red><strong><code>int (* parr3[10])[5]</code>;—parr3是一个指针数组，存放10个指针数组，1个指针数组里又存5个int类型元素的数组</strong></font></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122057446.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122057446.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220909153046065"></p>
+<p><img src="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/5.png" class="lazyload placeholder" data-srcset="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/5.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><font color=red><strong>核心问题二：&amp;数组名与数组名问题</strong></font></p>
 <p><strong><font color=green>arr 和 &amp;arr 分别是啥？</font>—<code>arr表示数组首元素的地址</code>—<code>&amp;arr 表示的是整个数组的地址</code>，而不是数组首元素的地址</strong></p>
 <p><strong>举例：</strong></p>
@@ -750,7 +750,7 @@
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122057138.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122057138.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220909113758303"></p>
+<p><img src="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/6.png" class="lazyload placeholder" data-srcset="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/6.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><font color=red><strong>核心问题三：数组指针的使用</strong></font></p>
 <p><strong><font color=blue>错误使用实例：这样写代码，逻辑性 可读性太差</font></strong></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_CRT_SECURE_NO_WARNINGS</span></span>
@@ -765,7 +765,7 @@
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122058346.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122058346.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220909125504026"></p>
+<p><img src="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/7.png" class="lazyload placeholder" data-srcset="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/7.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><font color=blue>正确使用实例：</font></strong></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_CRT_SECURE_NO_WARNINGS</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
@@ -791,7 +791,7 @@
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122058967.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122058967.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220909130956780"></p>
+<p><img src="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/8.png" class="lazyload placeholder" data-srcset="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/8.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 <hr>
 <h2 id="数组传参与指针传参"><a href="#数组传参与指针传参" class="headerlink" title="数组传参与指针传参"></a><strong>数组传参与指针传参</strong></h2><blockquote>
@@ -876,7 +876,7 @@
  	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122058305.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122058305.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220909201829529"></p>
+<p><img src="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/9.png" class="lazyload placeholder" data-srcset="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/9.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>二级指针传参问题：</code></strong></p>
 <p><font color=red><strong>总结：二级指针可以传入<code>二级指针(pptr)</code> <code>一级指针地址(&amp;ptr)</code> <code>二维数组名(arr2)</code></strong></font></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_CRT_SECURE_NO_WARNINGS</span></span>
@@ -897,7 +897,7 @@
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122058487.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122058487.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220909202437648"></p>
+<p><img src="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/10.png" class="lazyload placeholder" data-srcset="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/10.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 <hr>
 <h2 id="函数指针与函数指针数组"><a href="#函数指针与函数指针数组" class="headerlink" title="函数指针与函数指针数组"></a><strong>函数指针与函数指针数组</strong></h2><blockquote>
@@ -931,7 +931,7 @@
 <span class="token comment">//解释：把0强制类型转换为void (*)()类型的函数指针，再去调用0地址处这个参数为无参 返回类型为void的函数</span>
 <span class="token comment">//现象：0->0x11223344</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122058283.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122058283.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220909205108070"></p>
+<p><img src="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/11.png" class="lazyload placeholder" data-srcset="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/11.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>函数指针数组问题：</code></strong></p>
 <p><strong>举例：函数指针对于个别问题的优化—<font color=red>函数指针数组的使用可以看作是C++重载的前身实现</font></strong></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token comment">//未使用函数指针数组，通过直接调用函数使用</span>
@@ -1050,7 +1050,7 @@
 <span class="token punctuation">&#125;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122058758.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122058758.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220909211303192"></p>
+<p><img src="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/12.png" class="lazyload placeholder" data-srcset="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/12.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 <hr>
 <h2 id="回调函数"><a href="#回调函数" class="headerlink" title="回调函数"></a><strong>回调函数</strong></h2><blockquote>
@@ -1121,7 +1121,7 @@
 <span class="token punctuation">&#125;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122058902.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122058902.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220909220131578"></p>
+<p><img src="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/13.png" class="lazyload placeholder" data-srcset="/img/%E9%AB%98%E9%98%B6%E6%8C%87%E9%92%88/13.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 
       </div>

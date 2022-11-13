@@ -657,7 +657,7 @@
     <article class="post post-detail">
       <div class="post-content">
         <h1 id="自定义类型"><a href="#自定义类型" class="headerlink" title="自定义类型"></a><strong>自定义类型</strong></h1><p><font color=green><strong>类型分类：内置类型(char shot int long double…)     自定义类型(结构体 枚举 联合体)</strong></font></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100135.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100135.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220910095805092"></p>
+<p><img src="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/1.png" class="lazyload placeholder" data-srcset="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/1.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <hr>
 <h2 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a><strong>结构体</strong></h2><h3 id="结构体类型的声明"><a href="#结构体类型的声明" class="headerlink" title="结构体类型的声明"></a><strong>结构体类型的声明</strong></h3><blockquote>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_CRT_SECURE_NO_WARNINGS</span></span>
@@ -675,7 +675,7 @@
 	<span class="token keyword">struct</span> <span class="token class-name">Stu</span> s1<span class="token punctuation">;</span><span class="token comment">//struct Stu才是类型，直接用Stu s1;是错误的</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100774.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100774.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220910100306088"></p>
+<p><img src="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/2.png" class="lazyload placeholder" data-srcset="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/2.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><font color=green><strong><u>重点注意：struct Stu是结构体类型，Stu只是结构体名字</u></strong></font></p>
 <p><font color=red><strong>特殊：匿名结构体类型的声明</strong></font></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token comment">//匿名结构体类型---不给结构体命名,但是要创建一个全局变量，不然用不了这个匿名结构体</span>
@@ -794,11 +794,11 @@
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100011.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100011.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220910104440788"></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100996.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100996.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220910105027178"></p>
+<p><img src="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/3.png" class="lazyload placeholder" data-srcset="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/3.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<p><img src="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/4.png" class="lazyload placeholder" data-srcset="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/4.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>从上图就可以很直观的看到，再内存中有些地址它是跳过了，并没有挨着存储，这里也就引出了结构体内存对齐规则！</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100041.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100041.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220910105425687"></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100426.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100426.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220910105706910"></p>
+<p><img src="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/5.png" class="lazyload placeholder" data-srcset="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/5.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<p><img src="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/6.png" class="lazyload placeholder" data-srcset="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/6.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><font color=green><strong>易错理解解读：</strong></font></p>
 <ol>
 <li><strong><font color=red>这里所说的偏移量是相比于当前地址位开始的，对齐数是针对不同变量来的，比如char c1的对齐数是1，那么对于c1变量来说，它以后的成员存放都是相差1地址，但是对于int i对齐数为4来说，它就要相差4地址才能存放一个成员，如图就可以看到，先存放c1的成员占据了地址0，然后存放i的成员（深红色部分），所以往后偏移4个地址，到了地址为4的地方才存放(黄色部分)</font></strong></li>
@@ -867,7 +867,7 @@
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100303.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100303.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220910123720410"></p>
+<p><img src="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/7.png" class="lazyload placeholder" data-srcset="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/7.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 <hr>
 <h3 id="结构体传参"><a href="#结构体传参" class="headerlink" title="结构体传参"></a><strong>结构体传参</strong></h3><blockquote>
@@ -978,7 +978,7 @@
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100940.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100940.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220910164018354"></p>
+<p><img src="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/8.png" class="lazyload placeholder" data-srcset="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/8.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>联合体的特点：</code></strong></p>
 <p><strong><font color=red>联合的成员是共用同一块内存空间的，这样一个联合变量的大小，至少是最大成员的大小（因为联合至少得有能力保存最大的那个成员）</font></strong></p>
 <p><strong><code>联合体大小的计算：</code></strong></p>
@@ -1005,7 +1005,7 @@
 <span class="token punctuation">&#125;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100390.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100390.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220910165308920"></p>
+<p><img src="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/9.png" class="lazyload placeholder" data-srcset="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/9.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 <hr>
 <h2 id="扩展：位段"><a href="#扩展：位段" class="headerlink" title="扩展：位段"></a><strong>扩展：位段</strong></h2><blockquote>
@@ -1035,7 +1035,7 @@
 <span class="token punctuation">&#125;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100409.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100409.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220910130502985"></p>
+<p><img src="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/10.png" class="lazyload placeholder" data-srcset="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/10.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>位段的内存分配问题：</code></strong></p>
 <ol>
 <li><strong>位段的成员可以是 <code>unsigned int</code> 、 <code>signed int</code> 或者是 <code>char</code> （属于整形家族）类型 —int就是signed int的缩写</strong></li>
@@ -1055,7 +1055,7 @@ s<span class="token punctuation">.</span>b <span class="token operator">=</span>
 s<span class="token punctuation">.</span>c <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span><span class="token comment">//5个bit位存储3</span>
 s<span class="token punctuation">.</span>d <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span><span class="token comment">//4个bit位存储4</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100814.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122100814.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220910161243485"></p>
+<p><img src="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/11.png" class="lazyload placeholder" data-srcset="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/11.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>位段的跨平台问题：</code></strong></p>
 <ol>
 <li><font color=red><strong>int 位段被当成有符号数还是无符号数是不确定的</strong> </font></li>
@@ -1064,7 +1064,7 @@ s<span class="token punctuation">.</span>d <span class="token operator">=</span>
 <li><font color=red><strong>当一个结构包含两个位段，第二个位段成员比较大，无法容纳于第一个位段剩余的位时，是舍弃剩余的位还是利用，这是不确定的</strong></font></li>
 </ol>
 <p><strong><font color=blue>位段的应用常见：网络发包的时候节约空间:</font></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122101195.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122101195.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220910162034059"></p>
+<p><img src="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/12.png" class="lazyload placeholder" data-srcset="/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B1%BB%E5%9E%8B/12.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 
       </div>
