@@ -660,7 +660,7 @@
 <h2 id="理解指针"><a href="#理解指针" class="headerlink" title="理解指针"></a><strong>理解指针</strong></h2><blockquote>
 <p><strong><code>指针的理解：</code><font color=red>指针就是地址</font>，平时说的指针是指针变量，是用来存放内存地址的变量</strong></p>
 <p><font color=red><strong>指针在内存中的存储：</strong></font></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122017952.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122017952.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907172519544"></p>
+<p><img src="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/1.png" class="lazyload placeholder" data-srcset="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/1.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong>我们可以通过<code>&amp;</code>（取地址操作符）<code>取出变量的内存起始地址</code>，把地址可以存放到一个变量中，这个变量就是指针变量，比如上图的p</strong></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_CRT_SECURE_NO_WARNINGS</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
@@ -672,7 +672,7 @@
  	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122017257.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122017257.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907173158753"></p>
+<p><img src="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/2.png" class="lazyload placeholder" data-srcset="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/2.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong>调节内存监视窗口显示规格为4个位，则2个数表示一个字节，int是4个字节，则0a表示的是10，存储了a&#x3D;10</strong></p>
 <p><strong><code>指针的大小：</code></strong></p>
 <p><strong><font color=red>补充：</font></strong></p>
@@ -710,7 +710,7 @@
 <span class="token punctuation">&#125;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122017828.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122017828.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907174526005"></p>
+<p><img src="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/3.png" class="lazyload placeholder" data-srcset="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/3.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>指针的解引用：指针的类型决定了，对指针解引用的时候有多大的权限（能操作几个字节）</code></strong></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_CRT_SECURE_NO_WARNINGS</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
@@ -726,7 +726,7 @@
 <span class="token punctuation">&#125;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122017060.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122017060.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907175647456"></p>
+<p><img src="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/4.png" class="lazyload placeholder" data-srcset="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/4.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 <hr>
 <h2 id="野指针"><a href="#野指针" class="headerlink" title="野指针"></a><strong>野指针</strong></h2><blockquote>
@@ -800,7 +800,7 @@
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122017014.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122017014.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907200531845"></p>
+<p><img src="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/5.png" class="lazyload placeholder" data-srcset="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/5.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token comment">//②指针-指针---前提条件：两个指针指向同一块空间才可以</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_CRT_SECURE_NO_WARNINGS</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;stdio.h></span></span>
@@ -812,7 +812,7 @@
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122017843.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122017843.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907200734390"></p>
+<p><img src="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/6.png" class="lazyload placeholder" data-srcset="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/6.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong>补充：<font color=red>允许指向数组元素的指针与指向数组最后一个元素后面的那个内存位置的指针比较，但是不允许与指向第一个元素之前的那个内存位置的指针进行比较</font></strong></p>
 </blockquote>
 <h2 id="指针与数组"><a href="#指针与数组" class="headerlink" title="指针与数组"></a><strong>指针与数组</strong></h2><blockquote>
@@ -827,7 +827,7 @@
 <span class="token punctuation">&#125;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122017425.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122017425.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907204347239"></p>
+<p><img src="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/7.png" class="lazyload placeholder" data-srcset="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/7.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><font color=red>可见数组名和数组首元素的地址是一样的</font></strong></p>
 <p><strong><code>既然可以把数组名当成地址存放到一个指针中，我们使用指针来访问就成为可能</code></strong></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_CRT_SECURE_NO_WARNINGS</span></span>
@@ -844,13 +844,13 @@
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122017546.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122017546.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907204547485"></p>
+<p><img src="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/8.png" class="lazyload placeholder" data-srcset="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/8.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><font color=red>结论： p+i 其实计算的是数组 arr 下标为i的地址</font></strong></p>
 </blockquote>
 <hr>
 <h2 id="二级指针"><a href="#二级指针" class="headerlink" title="二级指针"></a><strong>二级指针</strong></h2><blockquote>
 <p><strong>指针变量也是变量，是变量就有地址，那指针变量的地址存放在哪里？ —是存在二级指针</strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122018158.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122018158.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907210332615"></p>
+<p><img src="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/9.png" class="lazyload placeholder" data-srcset="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/9.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token comment">//*ppa通过对ppa中地址进行解引用，这样就找到了pa，*ppa其实访问的就是pa</span>
 <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
 <span class="token keyword">int</span> <span class="token operator">*</span>pa<span class="token operator">=</span><span class="token operator">&amp;</span>a
@@ -867,7 +867,7 @@
 <span class="token keyword">char</span> arr2<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//arr2数组存放6个char类型元素---字符数组</span>
 <span class="token keyword">int</span><span class="token operator">*</span> arr3<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//arr3数组存放5个int*类型元素---指针数组</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122018419.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122018419.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907211946934"></p>
+<p><img src="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/10.png" class="lazyload placeholder" data-srcset="/img/%E4%BD%8E%E9%98%B6%E6%8C%87%E9%92%88/10.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 
       </div>

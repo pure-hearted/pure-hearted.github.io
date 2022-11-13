@@ -661,12 +661,12 @@
 <p><font color=green><strong>函数栈帧的创建和销毁离不开寄存器，了解函数栈帧之前先了解一下cpu中的寄存器</strong></font></p>
 <p><font color=green><strong>cpu中供应用程序员使用的寄存器主要有：通用寄存器（EAX、EBX、ECX、EDX、ESP、EBP、ESI、EDI），段寄存器（CS、DS、SS、ES、FS、GS），标志和控制寄存器（EIP、EFLAGS）</strong></font></p>
 <p><font color=red><strong>其中EBP一般用作基址指针，ESP一般用作堆栈指针</strong></font><strong>—<code>ebp作为栈底指针，esp作为栈顶指针</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122018801.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122018801.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907221235874"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/1.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/1.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>对于内存的认知：栈区、堆区、全局静态区、常量区、代码区</code></strong> <strong>—实际存储是从<code>高地址往低地址方向存储</code></strong>—<strong><font color=red>这也说明了为什么int a&#x3D;0x11223344在查看内存监视器的时候，地址内容显示是44 33 22 11</font></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122018113.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122018113.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907232209789"></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122018051.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122018051.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907221349250"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/2.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/2.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/3.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/3.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>对于esp和ebp的认知：</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019412.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019412.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907221739217"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/4.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/4.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>举例代码：</code></strong></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
 <span class="token keyword">int</span> <span class="token function">ADD</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
@@ -684,51 +684,51 @@
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><strong>通过反汇编有了如下图的结果：</strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019617.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019617.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907222908402"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/5.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/5.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 <hr>
 <h2 id="栈帧的创建"><a href="#栈帧的创建" class="headerlink" title="栈帧的创建"></a><strong>栈帧的创建</strong></h2><blockquote>
 <p><strong>通过上面的举例代码，我们剖析这个栈帧创建过程：<font color=red>首先是main函数创建栈帧，然后是ADD函数创建栈帧</font></strong></p>
 <p><strong><code>main函数创建栈帧过程：</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019690.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019690.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907231421728"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/6.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/6.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>main函数栈帧创建的详细步骤：</code></strong></p>
 <p><font color=red><strong>1.main函数创建栈帧之前：</strong></font></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019499.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019499.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907224111822"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/7.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/7.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><font color=red><strong>2.ebp压栈，esp指向开辟空间的顶端并赋值给ebp指针</strong></font></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019636.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019636.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907224219079"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/8.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/8.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><font color=red><strong>3.esp-e4h即main函数栈帧大小为e4h字节，esp指向main函数栈顶</strong></font></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019871.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019871.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907224425193"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/9.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/9.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><font color=red><strong>4.ebx、esi、edi压栈并给edi加载有效地址ebp-24h，将edi和ebp之间的9个地址赋值为cc cc cc cc</strong></font></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019254.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019254.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907224605694"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/10.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/10.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><font color=red><strong>5.给ebp-8，ebp-14，ebp-20h赋初值exa压栈，并将ebp-14h的值传给eax，ecx压栈，并把ebp-8的值传给ecx，这个过程就是函数传参的过程。调用函数ADD之前把call下一句地址压栈</strong></font></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019616.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019616.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907224951250"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/11.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/11.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>至此main函数的函数栈帧的创建和数据初始化就完成了</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019732.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019732.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907225051343"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/12.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/12.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>ADD函数栈帧的创建：</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019246.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019246.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907225252420"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/13.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/13.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong>add函数栈帧的创建和main函数栈帧创建是一样的，需要注意的是，ADD函数执行结束后的返回值保存在了寄存器eax中，就是避免ADD函数栈帧销毁时，主函数无法访问ADD返回值。由此可见函数返回值是如何返回的。</strong></p>
 <p><strong><code>ADD函数栈帧的创建详细过程：</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019820.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019820.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907225652946"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/14.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/14.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 <hr>
 <h2 id="栈帧的销毁"><a href="#栈帧的销毁" class="headerlink" title="栈帧的销毁"></a><strong>栈帧的销毁</strong></h2><blockquote>
 <p><strong>以ADD函数函数栈帧的销毁为例</strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019319.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019319.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907225827319"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/15.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/15.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>ADD函数栈帧销毁详细步骤：</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019965.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122019965.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907225915905"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/16.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/16.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 <hr>
 <h2 id="函数传参、返回值、初始化赋值、调用、执行结束问题的思考"><a href="#函数传参、返回值、初始化赋值、调用、执行结束问题的思考" class="headerlink" title="函数传参、返回值、初始化赋值、调用、执行结束问题的思考"></a><strong>函数传参、返回值、初始化赋值、调用、执行结束问题的思考</strong></h2><blockquote>
 <p><strong><code>函数如何传参：</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122020536.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122020536.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907230044817"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/17.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/17.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>函数返回值如何返回：</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122020157.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122020157.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907230114566"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/18.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/18.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>函数中变量如何初始化和赋值：</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122020514.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122020514.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907230323143"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/19.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/19.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>函数如何调用如何返回：</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122020559.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122020559.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907230408724"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/20.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/20.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>函数执行结束后系统进行了什么操作:</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122020739.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122020739.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220907230457283"></p>
+<p><img src="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/21.png" class="lazyload placeholder" data-srcset="/img/%E5%87%BD%E6%95%B0%E6%A0%88%E5%B8%A7/21.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 
       </div>
