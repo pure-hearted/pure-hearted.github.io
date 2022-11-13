@@ -691,7 +691,7 @@
 FILE<span class="token operator">*</span> pf<span class="token punctuation">;</span><span class="token comment">//文件指针变量</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><strong><font color=red>定义pf是一个指向FILE类型数据的指针变量。可以使pf指向某个文件的文件信息区（是一个结构体变量）。通过该文件信息区中的信息就能够访问该文件。也就是说，通过文件指针变量能够找到与它关联的文件，如下图：</font></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102398.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102398.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911205442841"></p>
+<p><img src="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/1.png" class="lazyload placeholder" data-srcset="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/1.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>文件的打开与关闭函数原型：</code></strong></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token comment">//打开文件</span>
 FILE <span class="token operator">*</span> <span class="token function">fopen</span> <span class="token punctuation">(</span> <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span> filename<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span> mode <span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -699,7 +699,7 @@ FILE <span class="token operator">*</span> <span class="token function">fopen</s
 <span class="token keyword">int</span> <span class="token function">fclose</span> <span class="token punctuation">(</span> FILE <span class="token operator">*</span> stream <span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><strong><code>文件的打开方式总结：</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102322.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102322.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911205827610"></p>
+<p><img src="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/2.png" class="lazyload placeholder" data-srcset="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/2.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><font color=red><strong>总结：r+具有读写属性，从文件头开始写，保留原文件中没有被覆盖的内容—w+也具有读写属性，写的时候如果文件存在，会被清空，从头开始写</strong></font></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_CRT_SECURE_NO_WARNINGS</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
@@ -723,13 +723,13 @@ FILE <span class="token operator">*</span> <span class="token function">fopen</s
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102559.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102559.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911210324399"></p>
+<p><img src="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/3.png" class="lazyload placeholder" data-srcset="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/3.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 <hr>
 <h2 id="文件的顺序读写与随机读写"><a href="#文件的顺序读写与随机读写" class="headerlink" title="文件的顺序读写与随机读写"></a><strong>文件的顺序读写与随机读写</strong></h2><blockquote>
 <p><strong><code>顺序读写，即挨着顺序对文件中的数据进行输入或输出</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102496.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102496.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911211105104"></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102076.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102076.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911210817100"></p>
+<p><img src="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/4.png" class="lazyload placeholder" data-srcset="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/4.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<p><img src="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/5.png" class="lazyload placeholder" data-srcset="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/5.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>fgetc</code>：顺序读取文件中的一个字符—<font color=green>一个一个的读，调用一次往后挪动一位</font></strong></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_CRT_SECURE_NO_WARNINGS</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
@@ -776,17 +776,17 @@ FILE <span class="token operator">*</span> <span class="token function">fopen</s
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102921.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102921.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911220658488"></p>
+<p><img src="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/6.png" class="lazyload placeholder" data-srcset="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/6.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>fputc：顺序写入一个字符内容进入文件</code></strong>—<strong><code>fputs：顺序写入字符串内容进入文件</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102799.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102799.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911222800515"></p>
+<p><img src="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/7.png" class="lazyload placeholder" data-srcset="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/7.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>fgets：读取文件里的字符串</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102412.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102412.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911222937498"></p>
+<p><img src="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/8.png" class="lazyload placeholder" data-srcset="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/8.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>fprintf：格式化输出</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102656.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102656.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911223059261"></p>
+<p><img src="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/9.png" class="lazyload placeholder" data-srcset="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/9.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>fscanf：格式化输入</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102053.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102053.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911223301737"></p>
+<p><img src="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/10.png" class="lazyload placeholder" data-srcset="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/10.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>fread：二进制输入</code></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102417.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102417.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911223422641"></p>
+<p><img src="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/11.png" class="lazyload placeholder" data-srcset="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/11.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>fwrite：二进制输出</code></strong></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">&#123;</span>
@@ -808,7 +808,7 @@ FILE <span class="token operator">*</span> <span class="token function">fopen</s
 
 
 <p><font color=red><strong>扩展：scanf&#x2F;fscanf&#x2F;sscanf—printf&#x2F;fprintf&#x2F;sprintf的区别</strong></font></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102201.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102201.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911224108401"></p>
+<p><img src="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/12.png" class="lazyload placeholder" data-srcset="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/12.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <hr>
 <p><strong><code>随机读取：即随机对文件中的数据进行输入或输出</code></strong></p>
 <p><strong><font color=red>文件的随机读取函数分为：fseek、ftell、rewind</font></strong></p>
@@ -877,7 +877,7 @@ FILE <span class="token operator">*</span> <span class="token function">fopen</s
 <p><strong><font color=green>一个数据在内存中是怎么存储的呢？</font>—<code>ASCII字符存储，数值类型ASCII或二进制</code></strong></p>
 <p><strong>字符一律以ASCII形式存储，数值型数据既可以用ASCII形式存储，也可以使用二进制形式存储</strong></p>
 <p><strong>如有整数10000，如果以ASCII码的形式输出到磁盘，则磁盘中占用5个字节（每个字符一个字节），而 二进制形式输出，则在磁盘上只占4个字节</strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102490.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102490.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911230458718"></p>
+<p><img src="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/13.png" class="lazyload placeholder" data-srcset="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/13.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 <hr>
 <h2 id="文本读取结束的判定"><a href="#文本读取结束的判定" class="headerlink" title="文本读取结束的判定"></a><strong>文本读取结束的判定</strong></h2><blockquote>
@@ -942,7 +942,7 @@ FILE <span class="token operator">*</span> <span class="token function">fopen</s
 <hr>
 <h2 id="理解文件缓冲区"><a href="#理解文件缓冲区" class="headerlink" title="理解文件缓冲区"></a><strong>理解文件缓冲区</strong></h2><blockquote>
 <p><font color=red><strong>ANSIC 标准采用“缓冲文件系统”处理的数据文件的，所谓缓冲文件系统是指系统自动地在内存中为程序中每一个正在使用的文件开辟一块“文件缓冲区”。从内存向磁盘输出数据会先送到内存中的缓冲区，装满缓冲区后才一起送到磁盘上。如果从磁盘向计算机读入数据，则从磁盘文件中读取数据输入到内存缓冲区（充满缓冲区），然后再从缓冲区逐个地将数据送到程序数据区（程序变量等）。缓冲区的大小根据C编译系统决定的</strong></font></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102785.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122102785.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911231503847"></p>
+<p><img src="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/14.png" class="lazyload placeholder" data-srcset="/img/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/14.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;windows.h></span></span>
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>

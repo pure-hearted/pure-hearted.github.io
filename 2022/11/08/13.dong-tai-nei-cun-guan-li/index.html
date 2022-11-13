@@ -677,18 +677,15 @@
 <p><font color=red><strong>2.如果开辟失败，则返回一个NULL指针，因此malloc的返回值一定要做检查</strong></font></p>
 <p><font color=red><strong>3.返回值的类型是 <code>void* </code>，所以malloc函数并不知道开辟空间的类型，具体在使用的时候使用者自己 来决定</strong></font></p>
 <p><font color=red><strong>4.返回值的类型是 <code>void*</code> ，所以malloc函数并不知道开辟空间的类型，具体在使用的时候使用者自己 来决定</strong></font></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122101737.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122101737.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911101003180"></p>
+<p><img src="/img/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/1.png" class="lazyload placeholder" data-srcset="/img/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/1.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>②free函数：用来释放动态开辟的内存---原型：void free (void* ptr);</code></strong></p>
 <p><strong>free的理解：释放指针指向的动态开辟内存，没有释放指针</strong></p>
 <p><font color=red><strong>1.如果参数 ptr 指向的空间不是动态开辟的，那free函数的行为是未定义的</strong></font></p>
 <p><font color=red><strong>2.如果参数 ptr 是NULL指针，则函数什么事都不做</strong></font></p>
-<img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122101490.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122101490.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911101105058" style="zoom:80%;" />
-
-
-
+<p><img src="/img/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/2.png" class="lazyload placeholder" data-srcset="/img/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/2.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong><code>核心问题：为什么free指针后一定要置NULL?</code></strong></p>
 <p><font color=red><strong>释放的是指针指向的内存，指针并没有释放，只有程序结束才会销毁指针变量，释放free内存后，指针还指向这块内存，但里面的内容变了，成为了垃圾信息，因此需要在释放指针后将指针置NULL，否则使用指针就是使用野指针</strong></font></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122101399.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122101399.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911094726490"></p>
+<p><img src="/img/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/3.png" class="lazyload placeholder" data-srcset="/img/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/3.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_CRT_SECURE_NO_WARNINGS</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;stdlib.h></span><span class="token comment">//动态内存开辟函数的头文件</span></span>
@@ -719,7 +716,7 @@
 <p><strong>calloc的理解：动态地分配 num 个长度为 size 的连续空间，并将每一个字节都初始化为 0</strong></p>
 <p><font color=red><strong>1.函数的功能是为 num 个大小为 size 的元素开辟一块空间，并且把空间的每个字节初始化为0</strong></font></p>
 <p><font color=red><strong>2.与函数 malloc 的区别只在于 calloc 会在返回地址之前把申请的空间的每个字节初始化为全0</strong></font></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122101081.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122101081.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911101550563"></p>
+<p><img src="/img/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/4.png" class="lazyload placeholder" data-srcset="/img/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/4.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h></span></span>
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -746,8 +743,8 @@
 <li><strong>情况一：原来空间之后有足够大的空间或者缩小空间—返回原内存空间地址</strong></li>
 <li><strong>情况二：原来空间之后没有足够大的空间—返回新内存空间地址</strong></li>
 </ol>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122101494.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122101494.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911103440046"></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122101184.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122101184.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220911103936511"></p>
+<p><img src="/img/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/5.png" class="lazyload placeholder" data-srcset="/img/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/5.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
+<p><img src="/img/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/6.png" class="lazyload placeholder" data-srcset="/img/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/6.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">&#123;</span>

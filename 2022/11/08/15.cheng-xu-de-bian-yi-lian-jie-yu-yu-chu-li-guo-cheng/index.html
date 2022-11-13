@@ -663,7 +663,7 @@
 <li><font color=red><strong>第1种是翻译环境，在这个环境中源代码被转换为可执行的机器指令</strong></font></li>
 <li><font color=red><strong>第2种是执行环境，它用于实际执行代码</strong></font></li>
 </ol>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103482.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103482.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220912000127253"></p>
+<p><img src="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/1.png" class="lazyload placeholder" data-srcset="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/1.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 <hr>
 <h2 id="程序的编译与链接过程"><a href="#程序的编译与链接过程" class="headerlink" title="程序的编译与链接过程"></a><strong>程序的编译与链接过程</strong></h2><blockquote>
@@ -673,7 +673,7 @@
 <p><strong>编译：检查语法生成汇编代码</strong></p>
 <p><strong>汇编：将汇编代码编译成机器码，生成目标文件</strong></p>
 <p><strong>链接：将目标文件链接在一起，生成可执行文件</strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103165.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103165.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220912000833211"></p>
+<p> <img src="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/2.png" class="lazyload placeholder" data-srcset="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/2.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <ol>
 <li><strong>预处理 选项 gcc -E test.c -o test.i 预处理完成之后就停下来，预处理之后产生的结果都放在test.i文件中</strong> </li>
 <li><strong>编译 选项 gcc -S test.c 编译完成之后就停下来，结果保存在test.s中</strong> </li>
@@ -736,7 +736,7 @@
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103023.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103023.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220912002607624"></p>
+<p> <img src="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/3.png" class="lazyload placeholder" data-srcset="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/3.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><strong>宏定义存在的问题：它是直接替换，没有考虑优先级和结合性问题</strong></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_CRT_SECURE_NO_WARNINGS</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
@@ -749,7 +749,7 @@
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103437.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103437.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220912002941876"></p>
+<p> <img src="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/4.png" class="lazyload placeholder" data-srcset="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/4.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <p><font color=red><strong>从上面的例子就可以很好的看出，宏定义存在的问题就容易导致运算顺序改变</strong></font></p>
 <p><strong><code>#define替换的规则：直接替换过去，其他不管</code></strong></p>
 <ol>
@@ -779,7 +779,7 @@
 <span class="token punctuation">&#125;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103855.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103855.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220912004335773"></p>
+<p><img src="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/5.png" class="lazyload placeholder" data-srcset="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/5.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token comment">//##的使用</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_CRT_SECURE_NO_WARNINGS</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
@@ -792,7 +792,7 @@
 <span class="token punctuation">&#125;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103064.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103064.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220912004925236"></p>
+<p> <img src="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/6.png" class="lazyload placeholder" data-srcset="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/6.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 <hr>
 <h3 id="带副作用的宏参数"><a href="#带副作用的宏参数" class="headerlink" title="带副作用的宏参数"></a><strong>带副作用的宏参数</strong></h3><blockquote>
@@ -812,7 +812,7 @@ x<span class="token operator">++</span><span class="token punctuation">;</span><
     <span class="token comment">//最终a=6，y=10,z=9</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103251.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103251.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220912005906140"></p>
+<p> <img src="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/7.png" class="lazyload placeholder" data-srcset="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/7.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 <hr>
 <h3 id="宏和函数的对比"><a href="#宏和函数的对比" class="headerlink" title="宏和函数的对比"></a><strong>宏和函数的对比</strong></h3><blockquote>
@@ -905,7 +905,7 @@ x<span class="token operator">++</span><span class="token punctuation">;</span><
 <span class="token punctuation">&#125;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103837.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103837.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220912012408506"></p>
+<p> <img src="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/8.png" class="lazyload placeholder" data-srcset="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/8.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token comment">//多分支条件编译</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_CRT_SECURE_NO_WARNINGS</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
@@ -923,7 +923,7 @@ x<span class="token operator">++</span><span class="token punctuation">;</span><
 <span class="token punctuation">&#125;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103606.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103606.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220912012616595"></p>
+<p> <img src="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/9.png" class="lazyload placeholder" data-srcset="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/9.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token comment">//判断是否被定义</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_CRT_SECURE_NO_WARNINGS</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
@@ -940,7 +940,7 @@ x<span class="token operator">++</span><span class="token punctuation">;</span><
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103515.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103515.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220912013243653"></p>
+<p><img src="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/10.png" class="lazyload placeholder" data-srcset="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/10.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token comment">//嵌套条件编译</span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">_CRT_SECURE_NO_WARNINGS</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
@@ -960,7 +960,7 @@ x<span class="token operator">++</span><span class="token punctuation">;</span><
 <span class="token punctuation">&#125;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103766.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122103766.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220912013901567"></p>
+<p> <img src="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/11.png" class="lazyload placeholder" data-srcset="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/11.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 <hr>
 <h2 id="文件包含"><a href="#文件包含" class="headerlink" title="文件包含"></a><strong>文件包含</strong></h2><blockquote>
@@ -978,7 +978,7 @@ x<span class="token operator">++</span><span class="token punctuation">;</span><
 <li><strong>这样最终程序中就会出现两份comm.h的内容。这样就造成了文件内容的重复</strong></li>
 </ol>
 <p><strong><font color=red>这种情况我们就可以使用条件编译或者#pragma once来处理这个问题</font></strong></p>
-<p><img src="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122104979.png" class="lazyload placeholder" data-srcset="https://gitee.com/pure_hearted/blog-bed/raw/master/202211122104979.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20220912014439307"></p>
+<p> <img src="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/12.png" class="lazyload placeholder" data-srcset="/img/%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BC%96%E8%AF%91/12.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp"></p>
 </blockquote>
 
       </div>
