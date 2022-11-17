@@ -526,8 +526,8 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   color: #42b983;
 }
 #l_side .side_archives {
-  order: ;
-  background: #fff;
+  order: '';
+  background: ;
 }
 #l_side .side_archives .card-archive-list {
   list-style: none;
